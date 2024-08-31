@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import tailwindStyles from "../index.css?inline";
 
@@ -69,7 +70,7 @@ const Widget = (props) => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="feedback">Feedback</Label>
-                    <Input
+                    <Textarea
                       id="feedback"
                       placeholder="Tell us what you think"
                       className="min-h-[100px]"
